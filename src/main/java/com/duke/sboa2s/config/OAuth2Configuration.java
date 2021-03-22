@@ -43,6 +43,12 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
 	@Autowired
 	private ClientDetailsService clientDetailsService;
 
+	@Value("${config.oauth2.privateKey}")
+	private String privateKey;
+
+	@Value("${config.oauth2.publicKey}")
+	private String publicKey;
+
 	@Autowired
 	@Qualifier("authenticationManagerBean")
 	private AuthenticationManager authenticationManager;
@@ -62,7 +68,8 @@ public class OAuth2Configuration extends AuthorizationServerConfigurerAdapter {
 	@Bean
 	public JwtAccessTokenConverter jwtAccessTokenConverter() {
 		JwtAccessTokenConverter converter = new CustomTokenEnhancer();
-		converter.setKeyPair(new KeyStoreKeyFactory(new ClassPathResource("jwt.jks"), "password".toCharArray()).getKeyPair("jwt"));
+		converter.setSigningKey(privateKey);
+		converter.setVerifierKey(publicKey);
 		return converter;
 	}
 
