@@ -1,4 +1,4 @@
-package com.duke.sboa2s;
+package com.duke.mcsv.authsv;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

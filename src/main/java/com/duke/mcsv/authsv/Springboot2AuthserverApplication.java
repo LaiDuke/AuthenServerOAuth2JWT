@@ -1,8 +1,7 @@
-package com.duke.sboa2s;
+package com.duke.mcsv.authsv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 @SpringBootApplication
 public class Springboot2AuthserverApplication {

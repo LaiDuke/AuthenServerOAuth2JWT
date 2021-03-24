@@ -1,4 +1,4 @@
-package com.duke.sboa2s.config;
+package com.duke.mcsv.authsv.config;
 
 import java.util.Map;
 

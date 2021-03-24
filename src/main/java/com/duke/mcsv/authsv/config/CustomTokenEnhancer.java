@@ -1,4 +1,4 @@
-package com.duke.sboa2s.config;
+package com.duke.mcsv.authsv.config;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 
-import com.duke.sboa2s.entity.User;
+import com.duke.mcsv.authsv.entity.User;
 
 public class CustomTokenEnhancer extends JwtAccessTokenConverter {
 	@Override

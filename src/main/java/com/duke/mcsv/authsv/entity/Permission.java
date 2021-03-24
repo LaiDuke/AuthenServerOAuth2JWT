@@ -1,4 +1,4 @@
-package com.duke.sboa2s.entity;
+package com.duke.mcsv.authsv.entity;
 
 import javax.persistence.Entity;
 

@@ -1,4 +1,4 @@
-package com.duke.sboa2s.service;
+package com.duke.mcsv.authsv.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AccountStatusUserDetailsChecker;
@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
-import com.duke.sboa2s.entity.User;
-import com.duke.sboa2s.repository.UserRepository;
+import com.duke.mcsv.authsv.entity.User;
+import com.duke.mcsv.authsv.repository.UserRepository;
 
 @Service(value = "userDetailsService")
 public class CustomUserDetailsService implements UserDetailsService {

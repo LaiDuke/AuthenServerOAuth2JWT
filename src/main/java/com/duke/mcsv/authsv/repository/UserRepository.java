@@ -1,11 +1,11 @@
-package com.duke.sboa2s.repository;
+package com.duke.mcsv.authsv.repository;
 
 import javax.transaction.Transactional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.duke.sboa2s.entity.User;
+import com.duke.mcsv.authsv.entity.User;
 
 @Repository
 @Transactional
